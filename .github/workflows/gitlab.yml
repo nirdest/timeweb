@@ -5,7 +5,7 @@ on:
     workflow_dispatch:
 
 env:
-  TF_LOG: "DEBUG"
+#  TF_LOG: "DEBUG"
   TWC_TOKEN: ${{ secrets.TIMEWEB_TOKEN }}
 
 jobs:
@@ -17,4 +17,4 @@ jobs:
       - uses: hashicorp/setup-terraform@v2
 
       - run: terraform init
-      - run: terraform plan
+      - run: terraform apply -auto-approve

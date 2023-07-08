@@ -7,9 +7,9 @@ terraform {
   required_version = ">= 0.13"
 }
 
-provider "twc" {
-  token =  list(${{ secrets.TIMEWEB_TOKEN }})
-}
+#provider "twc" {
+#  token =  ${{ secrets.TIMEWEB_TOKEN }}
+#}
 
 data "twc_configurator" "configurator" {
   location = "kz-1"

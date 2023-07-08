@@ -6,7 +6,7 @@ on:
 
 env:
   TF_LOG: "DEBUG"
-  TWC_TOKEN=${{ secrets.TIMEWEB_TOKEN }}
+  TWC_TOKEN: ${{ secrets.TIMEWEB_TOKEN }}
 
 jobs:
   build:

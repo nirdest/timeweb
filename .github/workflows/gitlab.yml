@@ -4,6 +4,8 @@ on:
   push:
     workflow_dispatch:
 
+env:
+  TF_LOG: "DEBUG"
 
 jobs:
   build:

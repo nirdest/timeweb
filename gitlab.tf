@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "twc" {
-  token = "${{ secrets.TIMEWEB_TOKEN }}"
+  token =  list(${{ secrets.TIMEWEB_TOKEN }})
 }
 
 data "twc_configurator" "configurator" {
